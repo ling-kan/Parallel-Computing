@@ -1,0 +1,179 @@
+﻿  Preprocessing: device.cl
+  Ignoring -TARGETOS option - not supported for 64-bit version of this tool
+  Setting target instruction set architecture to: Default (Advanced Vector Extension 2 (AVX2))
+  OpenCL Intel CPU device was found!
+  Device name: Intel(R) Core(TM) i3-5010U CPU @ 2.10GHz
+  Device version: OpenCL 2.0 (Build 10094)
+  Device vendor: Intel(R) Corporation
+  Device profile: FULL_PROFILE
+  Compilation started
+  Compilation done
+  Linking started
+  Linking done
+  Device build started
+  Device build done
+  Kernel <sum_reduce> was successfully vectorized (8)
+  Kernel <min_reduce> was successfully vectorized (8)
+  Kernel <max_reduce> was successfully vectorized (8)
+  Kernel <variance> was successfully vectorized (8)
+  Kernel <sorting> was successfully vectorized (8)
+  Kernel <scan_add> was successfully vectorized (8)
+  Done.
+  sum_reduce info:
+  	Maximum work-group size: 4096
+  	Compiler work-group size: (0, 0, 0)
+  	Local memory size: 0
+  	Preferred multiple of work-group size: 128
+  	Minimum amount of private memory: 128
+  
+  min_reduce info:
+  	Maximum work-group size: 4096
+  	Compiler work-group size: (0, 0, 0)
+  	Local memory size: 0
+  	Preferred multiple of work-group size: 128
+  	Minimum amount of private memory: 128
+  
+  max_reduce info:
+  	Maximum work-group size: 4096
+  	Compiler work-group size: (0, 0, 0)
+  	Local memory size: 0
+  	Preferred multiple of work-group size: 128
+  	Minimum amount of private memory: 128
+  
+  variance info:
+  	Maximum work-group size: 4096
+  	Compiler work-group size: (0, 0, 0)
+  	Local memory size: 0
+  	Preferred multiple of work-group size: 128
+  	Minimum amount of private memory: 128
+  
+  sorting info:
+  	Maximum work-group size: 4096
+  	Compiler work-group size: (0, 0, 0)
+  	Local memory size: 0
+  	Preferred multiple of work-group size: 128
+  	Minimum amount of private memory: 128
+  
+  scan_add info:
+  	Maximum work-group size: 4096
+  	Compiler work-group size: (0, 0, 0)
+  	Local memory size: 0
+  	Preferred multiple of work-group size: 128
+  	Minimum amount of private memory: 128
+  
+  Build succeeded!
+  
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  host.cpp
+c:\intel\opencl\sdk\include\cl\cl.h(590): warning C4005: 'CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE': macro redefinition
+  c:\users\ling-\onedrive\desktop\projects\new folder\weatherproject\weatherproject\host.cpp(5): note: see previous definition of 'CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE'
+c:\users\ling-\onedrive\desktop\projects\new folder\weatherproject\weatherproject\host.cpp(261): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\ling-\onedrive\desktop\projects\new folder\weatherproject\weatherproject\host.cpp(330): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xmemory0(881): warning C4244: 'initializing': conversion from '_Ty' to '_Objty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Objty=float
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xmemory(164): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,int&>(_Alloc &,_Objty *const ,int &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<float>,
+              _Ty=float,
+              _Objty=float
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xmemory(164): note: see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,int&>(_Alloc &,_Objty *const ,int &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<float>,
+              _Ty=float,
+              _Objty=float
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xmemory(190): note: see reference to function template instantiation 'void std::_Uninitialized_backout_al<_FwdIt,_Alloc>::_Emplace_back<_Ty&>(_Ty &)' being compiled
+          with
+          [
+              _FwdIt=float *,
+              _Alloc=std::allocator<float>,
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xmemory(190): note: see reference to function template instantiation 'void std::_Uninitialized_backout_al<_FwdIt,_Alloc>::_Emplace_back<_Ty&>(_Ty &)' being compiled
+          with
+          [
+              _FwdIt=float *,
+              _Alloc=std::allocator<float>,
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\xmemory(217): note: see reference to function template instantiation '_FwdIt std::_Uninitialized_copy_al_unchecked<_Ty*,float*,_Alloc>(_InIt,const _InIt,const _FwdIt,_Alloc &,std::_General_ptr_iterator_tag,std::_Any_tag)' being compiled
+          with
+          [
+              _FwdIt=float *,
+              _Ty=int,
+              _Alloc=std::allocator<float>,
+              _InIt=int *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\vector(1823): note: see reference to function template instantiation '_FwdIt *std::_Uninitialized_copy<_Iter,float*,std::allocator<_Ty>>(const _InIt,const _InIt,_FwdIt,_Alloc &)' being compiled
+          with
+          [
+              _FwdIt=float *,
+              _Iter=int *,
+              _Ty=float,
+              _InIt=int *,
+              _Alloc=std::allocator<float>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\vector(1161): note: see reference to function template instantiation 'float *std::vector<float,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,float *)' being compiled
+          with
+          [
+              _Ty=float,
+              _Iter=int *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\vector(1161): note: see reference to function template instantiation 'float *std::vector<float,std::allocator<_Ty>>::_Ucopy<_Iter>(_Iter,_Iter,float *)' being compiled
+          with
+          [
+              _Ty=float,
+              _Iter=int *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\vector(1261): note: see reference to function template instantiation 'void std::vector<float,std::allocator<_Ty>>::_Insert_range<int*>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Ty=float,
+              _Iter=int *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.16.27023\include\vector(1261): note: see reference to function template instantiation 'void std::vector<float,std::allocator<_Ty>>::_Insert_range<int*>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter,std::forward_iterator_tag)' being compiled
+          with
+          [
+              _Ty=float,
+              _Iter=int *
+          ]
+  c:\users\ling-\onedrive\desktop\projects\new folder\weatherproject\weatherproject\host.cpp(146): note: see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,void>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=float,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<cl_int>>>
+          ]
+  c:\users\ling-\onedrive\desktop\projects\new folder\weatherproject\weatherproject\host.cpp(146): note: see reference to function template instantiation 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>> std::vector<_Ty,std::allocator<_Ty>>::insert<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,void>(std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Iter,_Iter)' being compiled
+          with
+          [
+              _Ty=float,
+              _Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<cl_int>>>
+          ]
+host.obj : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in host.obj
+host.obj : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in host.obj
+host.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GetPlatformName(int)" (?GetPlatformName@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z) already defined in host.obj
+host.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GetDeviceName(int,int)" (?GetDeviceName@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HH@Z) already defined in host.obj
+host.obj : error LNK2005: "char const * __cdecl getErrorString(int)" (?getErrorString@@YAPEBDH@Z) already defined in host.obj
+host.obj : error LNK2005: "void __cdecl CheckError(int)" (?CheckError@@YAXH@Z) already defined in host.obj
+host.obj : error LNK2005: "void __cdecl AddSources(class std::vector<struct std::pair<char const *,unsigned __int64>,class std::allocator<struct std::pair<char const *,unsigned __int64> > > &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?AddSources@@YAXAEAV?$vector@U?$pair@PEBD_K@std@@V?$allocator@U?$pair@PEBD_K@std@@@2@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z) already defined in host.obj
+host.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl ListPlatformsDevices(void)" (?ListPlatformsDevices@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in host.obj
+host.obj : error LNK2005: "class cl::Context __cdecl GetContext(int,int)" (?GetContext@@YA?AVContext@cl@@HH@Z) already defined in host.obj
+host.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl GetFullProfilingInfo(class cl::Event const &,enum ProfilingResolution)" (?GetFullProfilingInfo@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVEvent@cl@@W4ProfilingResolution@@@Z) already defined in host.obj
+host.obj : error LNK2005: "void __cdecl print_help(void)" (?print_help@@YAXXZ) already defined in host.obj
+host.obj : error LNK2005: "class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > __cdecl split(char const *,char)" (?split@@YA?AV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@PEBDD@Z) already defined in host.obj
+host.obj : error LNK2005: main already defined in host.obj
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+host.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter
+host.obj : error LNK2001: unresolved external symbol __imp__calloc_dbg
+host.obj : error LNK2001: unresolved external symbol __imp__CrtDbgReport
+C:\Users\ling-\OneDrive\Desktop\Projects\New folder\WeatherProject\x64\Release\WeatherProject.exe : fatal error LNK1120: 3 unresolved externals

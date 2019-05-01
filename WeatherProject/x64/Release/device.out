@@ -1,0 +1,62 @@
+Setting target instruction set architecture to: Default (Advanced Vector Extension 2 (AVX2))
+OpenCL Intel CPU device was found!
+Device name: Intel(R) Core(TM) i3-5010U CPU @ 2.10GHz
+Device version: OpenCL 2.0 (Build 10094)
+Device vendor: Intel(R) Corporation
+Device profile: FULL_PROFILE
+Compilation started
+Compilation done
+Linking started
+Linking done
+Device build started
+Device build done
+Kernel <sum_reduce> was successfully vectorized (8)
+Kernel <min_reduce> was successfully vectorized (8)
+Kernel <max_reduce> was successfully vectorized (8)
+Kernel <variance> was successfully vectorized (8)
+Kernel <sorting> was successfully vectorized (8)
+Kernel <scan_add> was successfully vectorized (8)
+Done.
+sum_reduce info:
+	Maximum work-group size: 4096
+	Compiler work-group size: (0, 0, 0)
+	Local memory size: 0
+	Preferred multiple of work-group size: 128
+	Minimum amount of private memory: 128
+
+min_reduce info:
+	Maximum work-group size: 4096
+	Compiler work-group size: (0, 0, 0)
+	Local memory size: 0
+	Preferred multiple of work-group size: 128
+	Minimum amount of private memory: 128
+
+max_reduce info:
+	Maximum work-group size: 4096
+	Compiler work-group size: (0, 0, 0)
+	Local memory size: 0
+	Preferred multiple of work-group size: 128
+	Minimum amount of private memory: 128
+
+variance info:
+	Maximum work-group size: 4096
+	Compiler work-group size: (0, 0, 0)
+	Local memory size: 0
+	Preferred multiple of work-group size: 128
+	Minimum amount of private memory: 128
+
+sorting info:
+	Maximum work-group size: 4096
+	Compiler work-group size: (0, 0, 0)
+	Local memory size: 0
+	Preferred multiple of work-group size: 128
+	Minimum amount of private memory: 128
+
+scan_add info:
+	Maximum work-group size: 4096
+	Compiler work-group size: (0, 0, 0)
+	Local memory size: 0
+	Preferred multiple of work-group size: 128
+	Minimum amount of private memory: 128
+
+Build succeeded!
