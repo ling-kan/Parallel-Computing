@@ -1,5 +1,9 @@
+// --------- Sources -----//
 // https://stackoverflow.com/questions/53849/how-do-i-tokenize-a-string-in-c%EF%BC%89
 // http://www.bealto.com/gpu-sorting_parallel-bitonic-local.html
+// https://github.com/kevin-albert/cuda-mergesort/blob/master/mergesort.cu
+// https://onezork.wordpress.com/2014/08/29/gpu-mergesort/
+
 #define CL_USE_DEPRECATED_OPENCL_1_2_APIS
 #define __CL_ENABLE_EXCEPTIONS
 //#define CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE //returnes information about kernel object specfic to the device 
