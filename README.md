@@ -46,10 +46,3 @@ problems.
 
 ----------
 
-
-## License
-
-The program is licenced under [GPL Version 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html). The source is freely available to use, compile and modify.
-
-
-----------
